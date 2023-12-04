@@ -1,0 +1,154 @@
+.imageSlider {
+    top: 0rem;
+    position: absolute;
+
+}
+
+/*  ---------------- PROGRESS ---------------------- */
+
+.progressContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(180deg, black, transparent);
+    width: 100%;
+    margin-top:1rem;
+    z-index: 10;
+}
+
+.progressBar {
+    width: 15%;
+    height: 5px;
+    background-color: #d9d9d980;
+    overflow: hidden;
+
+    margin: 1rem;
+}
+
+.slidesContainer {
+    width: 100%;
+
+}
+
+.slides {
+    background-color: #000 !important;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ffffff;
+    transition: width 0.1s linear;
+}
+
+.completed {
+    width: 100% !important;
+    background-color: red;
+}
+
+/* ---------------------------------------- */
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:70vw;
+    left: -60%;
+}
+
+.nextBtn,
+.prevBtn {
+    top: 50%;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    border-radius: 50%;
+    background-color: #00000029;
+}
+
+.nextBtn {
+    right: 10px;
+}
+
+.prevBtn {
+    left: 10px;
+}
+
+.viewBtn {
+    position: relative !important;
+}
+
+/*  ---------------- SLIDER ---------------------- */
+
+.slideBtns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+    z-index: 2;
+}
+
+.slideText {
+    position: absolute;
+    bottom: -5.5rem;
+    margin-left: 0px;
+    width: 97.5%;
+    padding-left: 12px;
+    letter-spacing: 0.2px;
+    background: linear-gradient(0deg, rgb(15, 15, 15) 50%, transparent 140%);
+}
+
+.slidesImage {
+  width:100%;
+    height:70vh;
+}
+
+@media screen and (max-width: 661px) {
+    .slidesImage{
+        height:100vh;
+    }
+
+
+
+    .buttons {
+        width: 100vw;
+        left: 0;
+    }
+
+    .slideText {
+        position: absolute;
+        bottom: 3.5rem;
+        padding-left: 5px;
+        width: 100%;
+    }
+
+    .slideHeading {
+        font-size: 3rem;
+    }
+
+    .slidePara {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .progressContainer {
+        width: 100%;
+    }
+}

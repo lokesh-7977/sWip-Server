@@ -1,0 +1,46 @@
+.storiesContainerMain {
+    margin: 1rem;
+
+}
+
+.storiesHeading {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.storiesMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.nothing {
+    text-align: center;
+    color: #8E8E8E;
+    margin-bottom: 1rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+}
+
+.no_my_story {
+    color: #8E8E8E;
+}
+
+@media screen and (max-width: 768px) {
+
+    .storiesMain {
+        display: block;
+
+        width: 100%;
+
+    }
+
+    .storiesHeading {
+        font-size: 1.2rem;
+    }
+}
+  

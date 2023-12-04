@@ -1,0 +1,39 @@
+.storiesContainer{
+    margin: 1rem;
+    
+    }
+    .heading{
+        text-align: center;
+ margin-top: 2rem;
+    
+    }
+    .Stories{
+        display: grid;
+        grid-template-columns: 1fr ;
+        place-items: center;
+        justify-content: space-around;
+    }
+
+    .noMyStories{
+       
+            text-align: center;
+            background: #73abff;
+            color: #ffff;
+            padding: 0.6rem;
+            margin: 1rem;
+            border-radius: 1rem;
+            font-size: 1rem;
+          
+    }
+    .noStoryHeading{
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .heading{
+            font-size: 1.5rem;
+           
+        }
+    }
+
+    

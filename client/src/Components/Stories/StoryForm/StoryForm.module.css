@@ -1,0 +1,178 @@
+.storyForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.26);
+    background-color: white;
+    z-index: 2;
+}
+
+.storyFormSmall {
+    width: 50% !important;
+    padding: 1.5rem !important;
+}
+
+.storySlideContainer {
+    width: 100%;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* overflow-x: scroll; */
+
+    text-align: center;
+}
+
+.slideBox {
+    padding: 0.6rem;
+    border-radius: 10%;
+    text-align: center;
+    margin-right: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    box-shadow: 0px 4px 15px 0px #0000001a;
+}
+
+/* Slide Form */
+.slideForm,
+.slideFormContainer {
+    width: 100%;
+}
+
+.storyClose {
+    position: absolute;
+    right: 20px;
+    top: 1rem;
+}
+
+.slideFormContent {
+    width: 100%;
+}
+
+.slideFormInput {
+    width: 100% !important;
+    margin: 10px 0;
+    outline: none;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.slideFormInput:focus {
+    border: 1.5px solid #7eff73;
+}
+
+.slideFormInput::placeholder {
+    color: #847c7c;
+}
+
+.slideFormLabel {
+    width: 27%;
+    font-size: 1.2rem;
+}
+
+.inputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slideFormButton {
+    color: red;
+    border: none;
+    background-color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    position: relative;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form_err {
+    padding: 1rem;
+    color: red;
+}
+
+.slideFormRemove {
+    position: relative;
+    top: -0.4rem;
+    left: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .storyForm {
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slideFormLabel {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .slideFormInput {
+        width: 100%;
+        font-size: 0.6rem;
+    }
+
+    .storySlideContainer {
+        width: 40%;
+        flex-direction: column;
+        padding: 4rem 0;
+    }
+
+    .slideBox {
+        padding: 0.5rem;
+        border-radius: 3rem;
+        text-align: center;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 2%;
+    }
+
+    .form_err {
+        position: absolute;
+        bottom: 2rem;
+    }
+
+    .storyClose {
+        position: absolute;
+        right: 20px;
+        top: 1rem;
+    }
+
+    .buttons {
+        width: 95%;
+    }
+}
