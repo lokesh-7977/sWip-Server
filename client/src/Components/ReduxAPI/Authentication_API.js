@@ -29,7 +29,7 @@ export const loadUser = () => async (dispatch) => {
 
     // Fetch user details from the server based on the username
     const { data } = await axios.get(
-      `http://localhost:4000/auth/loaded/${username}`
+      `/auth/loaded/${username}`
     );
 
     // Dispatch a success action with the user data
@@ -49,7 +49,7 @@ export const register = (values) => async (dispatch) => {
 
     // Send a registration request to the server
     const { data } = await axios.post(
-      "http://localhost:4000/auth/register",
+      "/auth/register",
       values
     );
 
@@ -77,7 +77,7 @@ export const login = (values) => async (dispatch) => {
 
     // Send a login request to the server
     const { data } = await axios.post(
-      "http://localhost:4000/auth/login",
+      "/auth/login",
       values
     );
 
@@ -108,7 +108,7 @@ export const logout = () => async (dispatch) => {
     dispatch(logoutRequest());
 
     // Send a logout request to the server
-    await axios.post("http://localhost:4000/auth/logout");
+    await axios.post("/auth/logout");
 
     // Dispatch a success action
     dispatch(logoutSuccess());
