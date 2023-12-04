@@ -18,7 +18,7 @@ import {
 import { getStoriesByUser } from "./Stories_API";
 
 // Set the base URL for Axios and allow credentials to be sent with requests
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL || "https://swiptoryserver.onrender.com";
 axios.defaults.withCredentials = true;
 
 // Load User Action: Fetch user details based on the username stored in local storage

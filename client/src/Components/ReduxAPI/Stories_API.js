@@ -29,8 +29,8 @@ import {
 } from "../Redux Slice/StorySlice.js";
 
 // Axios configurations
-axios.defaults.baseURL = "http://localhost:4000";
-axios.defaults.withCredentials = false;
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL || "https://swiptoryserver.onrender.com";
+axios.defaults.withCredentials = true;
 
 // CREATE STORY
 export const createStory = (values) => async (dispatch) => {
