@@ -10,7 +10,7 @@ import Loader from "../../miscellaneous/SpinLoaders/SpinLoader";
 import shareIcon from "../../../assets/share.svg";
 import { likeStory, bookmarkStory, getStory } from "../../ReduxAPI/Stories_API";
 
-const ViewStory = () => {
+const StoryDetail = () => {
   const dispatch = useDispatch();
   const { story, storyLoading, liked: likedState, bookmarked: bookmarkedState, totalLikes, newLike } = useSelector((state) => state.story);
   const { isAuthenticated, userId, loading } = useSelector((state) => state.auth);
@@ -176,4 +176,4 @@ const ViewStory = () => {
   );
 };
 
-export default ViewStory;
+export default StoryDetail;
