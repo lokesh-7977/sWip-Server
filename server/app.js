@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // CORS Setup
 const corsOptions = {
-  origin: 'https://swiptory-swart.vercel.app',
+  origin: 'https://swiptoryapplication.vercel.app',
   credentials: true,
 };
 app.use(cors(corsOptions));
