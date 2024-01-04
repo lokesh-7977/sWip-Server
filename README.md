@@ -1,6 +1,7 @@
 # Swiptory - Web Story Platform
 
-Swiptory is a dynamic web story platform that provides a captivating way to explore and engage with content through immersive narratives. Whether you're a reader, a writer, or simply seeking to immerse yourself in captivating narratives, Swiptory has you covered.
+Swiptory is a dynamic web story platform that provides a captivating way to explore and engage with content through immersive narratives.
+Whether you're a reader, a writer, or simply seeking to immerse yourself in captivating narratives, Swiptory has you covered.
 
 ## Explore the App
 
